@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Значение счётчика: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHC-U8-8ff">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Значение счётчика: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHC-U8-8ff" userLabel="CounterLabel">
                                 <rect key="frame" x="16" y="528" width="361" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="25"/>
@@ -58,7 +58,7 @@
                                 <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsn-uZ-55q">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsn-uZ-55q" userLabel="MinusButton">
                                 <rect key="frame" x="16" y="600" width="160" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
@@ -75,11 +75,11 @@
                         <color key="backgroundColor" red="0.82369970784034063" green="0.99976281965379499" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <outlet property="counterUILabel" destination="oHC-U8-8ff" id="KxN-tk-W7p"/>
-                        <outlet property="historyUITextView" destination="CrB-4T-94l" id="dPd-gJ-ujh"/>
-                        <outlet property="minusUIButton" destination="dsn-uZ-55q" id="n5Q-Pq-tPU"/>
-                        <outlet property="plusUIButton" destination="mb1-6V-59D" id="rdf-QU-7Xz"/>
-                        <outlet property="resetUIButton" destination="8uY-QK-mfj" id="QRf-pI-0Wg"/>
+                        <outlet property="counterLabel" destination="oHC-U8-8ff" id="3s9-jC-9Qc"/>
+                        <outlet property="historyTextView" destination="CrB-4T-94l" id="U1v-WB-94m"/>
+                        <outlet property="minusButton" destination="dsn-uZ-55q" id="iAR-uK-k2r"/>
+                        <outlet property="plusButton" destination="mb1-6V-59D" id="n51-kY-urw"/>
+                        <outlet property="resetButton" destination="8uY-QK-mfj" id="Lh3-8K-6Cq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -2,26 +2,26 @@
 import UIKit
 
 final class ViewController: UIViewController {
-    @IBOutlet weak private var plusUIButton: UIButton!
-    @IBOutlet weak private var counterUILabel: UILabel!
-    @IBOutlet weak private var minusUIButton: UIButton!
-    @IBOutlet weak private var resetUIButton: UIButton!
-    @IBOutlet weak private var historyUITextView: UITextView!
+    @IBOutlet weak private var plusButton: UIButton!
+    @IBOutlet weak private var counterLabel: UILabel!
+    @IBOutlet weak private var minusButton: UIButton!
+    @IBOutlet weak private var resetButton: UIButton!
+    @IBOutlet weak private var historyTextView: UITextView!
     private var sum: Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-        plusUIButton.layer.cornerRadius = 25
-        minusUIButton.layer.cornerRadius = 25
-        resetUIButton.layer.cornerRadius = 25
+        plusButton.layer.cornerRadius = 25
+        minusButton.layer.cornerRadius = 25
+        resetButton.layer.cornerRadius = 25
     }
     
     private func updateCounter() {
-        counterUILabel.text = "Значение счетчика: \(sum)"
+        counterLabel.text = "Значение счетчика: \(sum)"
     }
     
     private func updateHistory(change: String) {
-        historyUITextView.text.append("\n[\(getCurrentDate())] \(change)")
-        historyUITextView.scrollRangeToVisible(NSRange(location: -1, length: 1))
+        historyTextView.text.append("\n[\(getCurrentDate())] \(change)")
+        historyTextView.scrollRangeToVisible(NSRange(location: -1, length: 1))
     }
     
     private func getCurrentDate() -> String {
