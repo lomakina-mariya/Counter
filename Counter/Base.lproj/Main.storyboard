@@ -76,7 +76,7 @@
                     </view>
                     <connections>
                         <outlet property="counterUILabel" destination="oHC-U8-8ff" id="KxN-tk-W7p"/>
-                        <outlet property="histotyUITextView" destination="CrB-4T-94l" id="dPd-gJ-ujh"/>
+                        <outlet property="historyUITextView" destination="CrB-4T-94l" id="dPd-gJ-ujh"/>
                         <outlet property="minusUIButton" destination="dsn-uZ-55q" id="n5Q-Pq-tPU"/>
                         <outlet property="plusUIButton" destination="mb1-6V-59D" id="rdf-QU-7Xz"/>
                         <outlet property="resetUIButton" destination="8uY-QK-mfj" id="QRf-pI-0Wg"/>
